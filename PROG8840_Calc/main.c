@@ -16,16 +16,19 @@ void main() {
 	int inputNum;
 
 	printf("Enter operation number: ");
-	scanf_s("%1o", &inputNum);
+	scanf("%1o", &inputNum);
 
 	switch (inputNum)
 	{
 	case 1:
 		add();
+		break;
 	case 2:
 		subtract();
+		break;
 	case 3:
 		multiply();
+		break;
 	}
 
 }
@@ -46,9 +49,9 @@ void printOptions() {
 void add() {
 	double num1, num2, result;
 	printf("Enter the first value:");
-	scanf_s("%lf", &num1);
+	scanf("%lf", &num1);
 	printf("Enter the second value:");
-	scanf_s("%lf", &num2);
+	scanf("%lf", &num2);
 	result = num1 + num2;
 	printf("%lf + %lf = %lf\n", num1, num2, result);
 }
@@ -73,3 +76,4 @@ void multiply() {
 	result = num2 * num1;
 	printf("%d * %d = %d\n", num1, num2, result);
 }
+
