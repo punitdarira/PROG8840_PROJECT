@@ -54,20 +54,22 @@ void add() {
 }
 
 void subtract() {
-	int num1, num2;
 
-	num1 = 0;
-	num2 = 42;
-
-	int result = num2 - num1;
+	int num1, num2, result;
+	printf("Enter the first value:");
+	scanf("%d", &num1);
+	printf("Enter the second value:");
+	scanf("%d", &num2);
+	result = num2 - num1;
+	printf("%d - %d = %d\n", num2, num1, result);
 }
 
 void multiply() {
-	int num1, num2;
-
-	num1 = 0;
-	num2 = 42;
-
-	int result = num2 - num1;
+	int num1, num2, result;
+	printf("Enter the first value:");
+	scanf("%d", &num1);
+	printf("Enter the second value:");
+	scanf("%d", &num2);
+	result = num2 * num1;
+	printf("%d * %d = %d\n", num1, num2, result);
 }
-
